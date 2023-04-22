@@ -25,3 +25,14 @@ buttons.forEach((item)=>{
         }
     }
 })
+
+const themeToggleBtn =document.querySelector(".theme-toggler");
+const calculator =document.querySelector(".calculator")
+
+let isdark=true
+themeToggleBtn.onclick=()=>{
+    calculator.classList.toggle("dark")
+    themeToggleBtn.classList.toggle("active")
+    isdark = !isdark;
+}
+
